@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Varta&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
+
+.blogDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom right, #7ecbff1a, #7ecbff1a),
+    url("https://images-na.ssl-images-amazon.com/images/I/71Evx-PJC5L._AC_SL1000_.jpg");
+  /* background-color: #e2ffee; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: left bottom;
+}
+
+.title {
+  font-size: 3rem;
+  font-family: "Nunito", sans-serif;
+  margin: 1.5rem 0 1rem;
+  color: #005a96;
+}
+
+.content {
+  width: 50%;
+  font-size: 1.3rem;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+}
+
+.author {
+  display: flex;
+  width: 100%;
+  margin: 1.7rem 0 0.3rem 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.author > h2 {
+  align-self: flex-start;
+  font-family: "Varta", sans-serif;
+  font-size: 1.2rem;
+}
+
+.author > h2 > span {
+  color: #0375c2;
+}
+
+h3 {
+  font-size: 0.9rem;
+  margin: 0.2rem 0 0;
+  font-family: "Varta", sans-serif;
+  color: #0375c2;
+}
+
+.comments {
+  width: 50%;
+}
+
+.comments > hr {
+  width: 100%;
+  margin: 0.5rem auto;
+  border: none;
+  border-top: 2px solid #88a1b1;
+}
+
+.comments > h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+  margin-left: 1rem;
+}
+
+.comments > input {
+  background: none;
+  border: none;
+  outline: none;
+  margin: 1rem 0 1.5rem;
+  border-bottom: 1.5px solid #005a96;
+  width: 95%;
+  color: #005a96;
+  font-size: 1rem;
+  padding: 0.3rem;
+}
+
+.comment__container {
+  background-color: #fff;
+  width: 95%;
+  padding: 0.3rem 0.7rem;
+  border-radius: 0.3rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.comment__container > h1 {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.2rem;
+}
+
+.comment__container > p {
+  font-size: 1rem;
+  color: #0375c2;
+}
+
+.delete__btn {
+  color: rgb(255, 137, 137);
+  position: absolute;
+  right: 0.5rem;
+  cursor: pointer;
+}
+
+.delete__btn:hover {
+  color: red;
+}
+
+@media only screen and (max-width: 1100px) {
+  .content {
+    width: 70%;
+  }
+  .comments {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .content {
+    width: 90%;
+  }
+  .title {
+    font-size: 1.7rem;
+  }
+  .content > p {
+    font-size: 1rem;
+  }
+  .content > h2 {
+    font-size: 1.1rem;
+  }
+  .comments {
+    width: 90%;
+  }
+}
